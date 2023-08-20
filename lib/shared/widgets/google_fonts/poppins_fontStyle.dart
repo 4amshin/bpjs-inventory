@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PoppinsText extends StatelessWidget {
-  final Text text;
+  final String text;
   final TextStyle textStyle;
   const PoppinsText({
     Key? key,
@@ -17,7 +17,7 @@ class PoppinsText extends StatelessWidget {
       style: GoogleFonts.poppins(
         textStyle: textStyle,
       ),
-      child: text,
+      child: Text(text),
     );
   }
 }
