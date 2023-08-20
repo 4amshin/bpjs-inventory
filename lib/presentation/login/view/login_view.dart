@@ -1,6 +1,8 @@
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
+import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -37,21 +39,22 @@ class LoginView extends StatelessWidget {
             ),
             SizedBox(height: screenHeight * 0.03),
             ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                  backgroundColor: primaryGreen,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  padding: const EdgeInsets.symmetric(vertical: 15),
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                elevation: 0,
+                backgroundColor: bpLightGreen,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
                 ),
-                child: Text(
-                  "LOGIN",
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),
-                ))
+                padding: EdgeInsets.symmetric(vertical: screenHeight * 0.025),
+              ),
+              child: const PoppinsText(
+                text: Text("LOGIN"),
+                textStyle: TextStyle(
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            )
           ],
         ),
       ),
