@@ -1,5 +1,5 @@
 import 'package:bpjs_inventory/presentation/home/view/home_view.dart';
-import 'package:bpjs_inventory/presentation/login/view/login_view.dart';
+import 'package:bpjs_inventory/presentation/auth/login/view/login_view.dart';
 import 'package:bpjs_inventory/shared/utils/screen_size.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

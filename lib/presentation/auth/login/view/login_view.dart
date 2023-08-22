@@ -1,5 +1,5 @@
-import 'package:bpjs_inventory/presentation/login/widgets/lv_bottom_link.dart';
-import 'package:bpjs_inventory/presentation/login/widgets/lv_middle_part.dart';
+import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_bottom_link.dart';
+import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_middle_part.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dart';
 import 'package:flutter/material.dart';

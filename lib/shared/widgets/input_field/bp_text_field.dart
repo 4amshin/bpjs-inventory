@@ -20,13 +20,13 @@ class BpTextField extends StatelessWidget {
     final Size screen = MediaQuery.of(context).size;
 
     return SizedBox(
-      height: screen.height * 0.075,
+      height: screen.height * 0.07,
       child: TextField(
         obscureText: isPassword,
         decoration: InputDecoration(
           labelText: labelText,
           suffixIcon: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
+            padding: EdgeInsets.symmetric(vertical: screen.height * 0.021),
             child: SvgPicture.asset(
               'assets/icons/$iconName.svg',
               colorFilter: const ColorFilter.mode(
@@ -40,7 +40,7 @@ class BpTextField extends StatelessWidget {
             // fontWeight: FontWeight.bold,
           ),
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(5),
           ),
           focusColor: Colors.red,
           focusedBorder: OutlineInputBorder(
@@ -48,7 +48,7 @@ class BpTextField extends StatelessWidget {
               color: secondaryBlue,
               width: 2,
             ),
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(5),
           ),
         ),
       ),

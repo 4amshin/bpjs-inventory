@@ -5,10 +5,12 @@ import 'package:google_fonts/google_fonts.dart';
 class PoppinsText extends StatelessWidget {
   final String text;
   final TextStyle textStyle;
+  final TextAlign? textAlign;
   const PoppinsText({
     Key? key,
     required this.text,
     required this.textStyle,
+    this.textAlign,
   }) : super(key: key);
 
   @override
@@ -17,7 +19,10 @@ class PoppinsText extends StatelessWidget {
       style: GoogleFonts.poppins(
         textStyle: textStyle,
       ),
-      child: Text(text),
+      child: Text(
+        text,
+        textAlign: textAlign,
+      ),
     );
   }
 }

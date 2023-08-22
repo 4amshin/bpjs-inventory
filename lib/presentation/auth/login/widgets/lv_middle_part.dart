@@ -1,4 +1,5 @@
-import 'package:bpjs_inventory/presentation/login/widgets/lv_forget_password.dart';
+import 'package:bpjs_inventory/presentation/auth/forget_password/view/forget_password_view.dart';
+import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_forget_password.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:bpjs_inventory/shared/widgets/buttons/regular_button.dart';
 import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dart';
@@ -41,7 +42,10 @@ class LvMiddlePart extends StatelessWidget {
         ),
         SizedBox(height: screen.height * 0.04),
         LvForgetPassword(
-          onLink: () {},
+          onLink: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const ForgetPasswordView()),
+          ),
         ),
         SizedBox(height: screen.height * 0.01),
         RegularButton(
