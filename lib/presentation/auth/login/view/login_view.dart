@@ -1,3 +1,4 @@
+import 'package:bpjs_inventory/presentation/auth/contact_admin/view/contact_admin_view.dart';
 import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_bottom_link.dart';
 import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_middle_part.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
@@ -23,7 +24,13 @@ class LoginView extends StatelessWidget {
             SizedBox(height: screen.height * 0.13),
             const LvMiddlePart(),
             SizedBox(height: screen.height * 0.05),
-            const LvBottomLink(),
+            LvBottomLink(
+              onLink: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ContactAdminView()),
+              ),
+            ),
           ],
         ),
       ),

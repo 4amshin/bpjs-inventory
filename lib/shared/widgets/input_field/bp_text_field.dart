@@ -35,9 +35,9 @@ class BpTextField extends StatelessWidget {
               ),
             ),
           ),
-          labelStyle: const TextStyle(
+          labelStyle: TextStyle(
             color: secondaryBlue,
-            // fontWeight: FontWeight.bold,
+            fontSize: screen.height * 0.02,
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),

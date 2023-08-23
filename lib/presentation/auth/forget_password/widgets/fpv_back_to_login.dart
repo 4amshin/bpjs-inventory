@@ -6,10 +6,8 @@ import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dar
 import 'package:bpjs_inventory/shared/widgets/icons/svg_icons.dart';
 
 class FpvBackToLogin extends StatelessWidget {
-  final void Function()? onTap;
   const FpvBackToLogin({
     Key? key,
-    this.onTap,
   }) : super(key: key);
 
   @override
@@ -17,14 +15,14 @@ class FpvBackToLogin extends StatelessWidget {
     final Size screen = MediaQuery.of(context).size;
 
     return GestureDetector(
-      onTap: onTap,
+      onTap: () => Navigator.pop(context),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgIcon(
             iconUrl: "assets/icons/arrow-left-2.svg",
             color: secondaryBlue,
-            height: screen.width * 0.08,
+            height: screen.height * 0.035,
           ),
           SizedBox(width: screen.width * 0.03),
           PoppinsText(
