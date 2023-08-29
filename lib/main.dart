@@ -1,6 +1,4 @@
-import 'package:bpjs_inventory/presentation/home/view/home_view.dart';
-import 'package:bpjs_inventory/presentation/auth/login/view/login_view.dart';
-import 'package:bpjs_inventory/shared/utils/screen_size.dart';
+import 'package:bpjs_inventory/presentation/admin/main_navigation/view/main_navigation_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -21,7 +19,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         useMaterial3: true,
       ),
-      home: const LoginView(),
+      home: const MainNavigationView(),
     );
   }
 }
