@@ -1,3 +1,6 @@
+import 'package:bpjs_inventory/presentation/history/widgets/hiv_app_bar.dart';
+import 'package:bpjs_inventory/presentation/history/widgets/hiv_history_item.dart';
+import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:flutter/material.dart';
 
 class HistoryView extends StatelessWidget {
@@ -6,8 +9,23 @@ class HistoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text("History View"),
+      appBar: const HivAppBar(),
+      body: SafeArea(
+        minimum: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 10,
+        ),
+        child: ListView.builder(
+          itemCount: 2,
+          itemBuilder: (context, index) {
+            return const HivHistoryItem(
+              name: 'Abdul Zubair Bin Qosim',
+              position: 'SDM Vice Manager',
+              status: 'Accepted',
+              color: bpLightGreen,
+            );
+          },
+        ),
       ),
     );
   }
