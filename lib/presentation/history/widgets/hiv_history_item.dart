@@ -7,14 +7,12 @@ import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dar
 class HivHistoryItem extends StatelessWidget {
   final String name;
   final String position;
-  final String status;
-  final Color? color;
+  final bool isAccept;
   const HivHistoryItem({
     Key? key,
     required this.name,
     required this.position,
-    required this.status,
-    this.color,
+    required this.isAccept,
   }) : super(key: key);
 
   @override
@@ -31,7 +29,7 @@ class HivHistoryItem extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(
           width: screen.height * 0.0024,
-          color: color ?? Colors.grey,
+          color: isAccept ? bpLightGreen : bpRedAccent,
         ),
         borderRadius: BorderRadius.circular(screen.height * 0.01),
       ),
@@ -66,10 +64,10 @@ class HivHistoryItem extends StatelessWidget {
                 ],
               ),
               PoppinsText(
-                text: status,
+                text: isAccept ? 'Accepted' : 'Rejected',
                 textStyle: TextStyle(
                   fontSize: screen.height * 0.017,
-                  color: color ?? Colors.grey,
+                  color: isAccept ? bpLightGreen : bpRedAccent,
                   fontWeight: FontWeight.w600,
                 ),
               ),

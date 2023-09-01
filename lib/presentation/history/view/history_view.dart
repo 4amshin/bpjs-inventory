@@ -1,6 +1,5 @@
 import 'package:bpjs_inventory/presentation/history/widgets/hiv_app_bar.dart';
 import 'package:bpjs_inventory/presentation/history/widgets/hiv_history_item.dart';
-import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:flutter/material.dart';
 
 class HistoryView extends StatelessWidget {
@@ -21,8 +20,7 @@ class HistoryView extends StatelessWidget {
             return const HivHistoryItem(
               name: 'Abdul Zubair Bin Qosim',
               position: 'SDM Vice Manager',
-              status: 'Accepted',
-              color: bpLightGreen,
+              isAccept: true,
             );
           },
         ),
