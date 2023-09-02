@@ -25,7 +25,9 @@ class HomeView extends StatelessWidget {
           ),
           itemCount: 4,
           itemBuilder: (context, index) {
-            return const HvGridItem();
+            return HvGridItem(
+              text: index.toString(),
+            );
           },
         ),
       ),
