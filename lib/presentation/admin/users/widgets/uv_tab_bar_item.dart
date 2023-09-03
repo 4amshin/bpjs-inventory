@@ -1,4 +1,4 @@
-import 'package:bpjs_inventory/presentation/admin/home/widgets/hv_grid_item.dart';
+import 'package:bpjs_inventory/presentation/admin/users/widgets/uv_grid_item.dart';
 import 'package:flutter/material.dart';
 
 class UvTabBarItem extends StatelessWidget {
@@ -10,12 +10,13 @@ class UvTabBarItem extends StatelessWidget {
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 15,
-          mainAxisSpacing: 15,
+          crossAxisSpacing: 25,
+          mainAxisSpacing: 20,
+          mainAxisExtent: 150,
         ),
-        itemCount: 14,
+        itemCount: 5,
         itemBuilder: (context, index) {
-          return HvGridItem(
+          return UvGridItem(
             text: index.toString(),
           );
         },

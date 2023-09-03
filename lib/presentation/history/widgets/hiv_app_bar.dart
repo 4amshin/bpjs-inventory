@@ -9,7 +9,7 @@ class HivAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      elevation: 1,
+      // elevation: 1,
       title: const PoppinsText(
         text: 'History',
         textStyle: TextStyle(
