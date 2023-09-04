@@ -1,5 +1,5 @@
-import 'package:bpjs_inventory/presentation/history/widgets/hiv_app_bar.dart';
 import 'package:bpjs_inventory/presentation/history/widgets/hiv_history_item.dart';
+import 'package:bpjs_inventory/shared/widgets/app_bar/regular_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class HistoryView extends StatelessWidget {
@@ -8,7 +8,7 @@ class HistoryView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const HivAppBar(),
+      appBar: const RegularAppBar(text: 'History'),
       body: SafeArea(
         minimum: const EdgeInsets.symmetric(
           horizontal: 20,

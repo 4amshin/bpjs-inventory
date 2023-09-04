@@ -1,7 +1,8 @@
-import 'package:bpjs_inventory/presentation/admin/users/widgets/uv_app_bar.dart';
+import 'package:bpjs_inventory/presentation/admin/users/view/add_or_edit_user_view.dart';
 import 'package:bpjs_inventory/presentation/admin/users/widgets/uv_tab_bar.dart';
 import 'package:bpjs_inventory/presentation/admin/users/widgets/uv_tab_bar_item.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
+import 'package:bpjs_inventory/shared/widgets/app_bar/regular_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class UsersView extends StatefulWidget {
@@ -19,7 +20,7 @@ class _UsersViewState extends State<UsersView> with TickerProviderStateMixin {
       vsync: this,
     );
     return Scaffold(
-      appBar: const UvAppBar(),
+      appBar: const RegularAppBar(text: 'Users'),
       body: SafeArea(
         minimum: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -50,7 +51,10 @@ class _UsersViewState extends State<UsersView> with TickerProviderStateMixin {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const AddOrEditUserView()),
+        ),
         backgroundColor: secondaryBlue,
         child: const Icon(
           Icons.add,

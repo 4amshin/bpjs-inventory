@@ -6,13 +6,15 @@ class UvTabBarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size screen = MediaQuery.of(context).size;
+
     return SizedBox(
       child: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          crossAxisSpacing: 25,
+          crossAxisSpacing: screen.width * 0.08,
           mainAxisSpacing: 20,
-          mainAxisExtent: 150,
+          mainAxisExtent: screen.width * 0.5,
         ),
         itemCount: 5,
         itemBuilder: (context, index) {

@@ -1,7 +1,6 @@
 import 'package:bpjs_inventory/presentation/admin/admin_profile/widgets/apv_name_&_position.dart';
 import 'package:bpjs_inventory/presentation/admin/admin_profile/widgets/apv_profile_img.dart';
-import 'package:bpjs_inventory/shared/theme/color_themes.dart';
-import 'package:bpjs_inventory/shared/widgets/buttons/svg_icon_button.dart';
+import 'package:bpjs_inventory/shared/widgets/buttons/back_icon_button.dart';
 import 'package:bpjs_inventory/shared/widgets/input_field/bp_text_form_field.dart';
 import 'package:flutter/material.dart';
 
@@ -13,13 +12,7 @@ class AdminProfileView extends StatelessWidget {
     final Size screen = MediaQuery.of(context).size;
 
     return Scaffold(
-      appBar: AppBar(
-        leading: SvgIconButton(
-          onTap: () => Navigator.pop(context),
-          svgIconName: 'arrow-left-2.svg',
-          color: secondaryBlue,
-        ),
-      ),
+      appBar: AppBar(leading: const BackIconButton()),
       body: SafeArea(
         minimum: const EdgeInsets.symmetric(
           horizontal: 20,

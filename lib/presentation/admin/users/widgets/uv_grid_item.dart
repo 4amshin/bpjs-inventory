@@ -12,6 +12,8 @@ class UvGridItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size screen = MediaQuery.of(context).size;
+
     return Container(
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
@@ -20,21 +22,24 @@ class UvGridItem extends StatelessWidget {
           width: 1.6,
           color: secondaryBlue,
         ),
-        borderRadius: BorderRadius.circular(17),
+        borderRadius: BorderRadius.circular(screen.width * 0.1),
       ),
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           CircleAvatar(
-            radius: 40,
-            backgroundImage: AssetImage('assets/images/rely.jpg'),
+            radius: screen.width * 0.13,
+            backgroundImage: const AssetImage('assets/images/rely.jpg'),
           ),
-          SizedBox(height: 5),
+          SizedBox(height: screen.width * 0.03),
           PoppinsText(
             text: 'User Name',
+            textAlign: TextAlign.center,
             textStyle: TextStyle(
-              fontSize: 13,
+              height: 1,
+              overflow: TextOverflow.ellipsis,
+              fontSize: screen.width * 0.04,
               fontWeight: FontWeight.w600,
               color: secondaryBlue,
             ),
