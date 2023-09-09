@@ -4,7 +4,7 @@ import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:bpjs_inventory/shared/widgets/icons/svg_icons.dart';
+import 'package:bpjs_inventory/shared/widgets/icons_&_images/svg_icons.dart';
 
 // final Size screen = MediaQuery.of(context).size;
 

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:bpjs_inventory/presentation/admin/status/widgets/sv_status_button.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dart';
-import 'package:bpjs_inventory/shared/widgets/icons/svg_icons.dart';
+import 'package:bpjs_inventory/shared/widgets/icons_&_images/svg_icons.dart';
 
 class SvStatusItem extends StatelessWidget {
   final String imgUrl;

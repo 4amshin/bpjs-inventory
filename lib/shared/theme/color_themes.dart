@@ -13,3 +13,4 @@ const Color secondaryBlue = Color(0xFF284B8C);
 const Color bpLightGreen = Color(0xFF05D472);
 const Color bpRedAccent = Color(0xFFF98A78);
 const Color bpGolden = Color(0xFFFFB300);
+const Color bpBlueLight = Color(0xFF42CCF4);
