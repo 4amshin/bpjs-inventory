@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "625241073475",
+    "project_id": "bpjs-inventory",
+    "storage_bucket": "bpjs-inventory.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625241073475:android:1a5afbd98eeda41e2cb1f6",
+        "android_client_info": {
+          "package_name": "com.example.bpjs_inventory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEjc0P0I8J50QSPJ12edW0qUHnkLFp4kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
