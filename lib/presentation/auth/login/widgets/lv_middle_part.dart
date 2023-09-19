@@ -1,13 +1,19 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:flutter/material.dart';
+
 import 'package:bpjs_inventory/presentation/auth/forget_password/view/forget_password_view.dart';
 import 'package:bpjs_inventory/presentation/auth/login/widgets/lv_forget_password.dart';
 import 'package:bpjs_inventory/shared/theme/color_themes.dart';
 import 'package:bpjs_inventory/shared/widgets/buttons/regular_button.dart';
 import 'package:bpjs_inventory/shared/widgets/google_fonts/poppins_fontStyle.dart';
 import 'package:bpjs_inventory/shared/widgets/input_field/bp_text_field.dart';
-import 'package:flutter/material.dart';
 
 class LvMiddlePart extends StatelessWidget {
-  const LvMiddlePart({Key? key}) : super(key: key);
+  final void Function()? onLogin;
+  const LvMiddlePart({
+    Key? key,
+    this.onLogin,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +55,7 @@ class LvMiddlePart extends StatelessWidget {
         ),
         SizedBox(height: screen.height * 0.01),
         RegularButton(
-          onTap: () {},
+          onTap: onLogin,
           backgroundColor: bpLightGreen,
           text: "LOGIN",
         ),
